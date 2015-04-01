@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D113c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rock Paper Scissors-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController title="Rock Paper Scissors" id="vXZ-lx-hvc" customClass="ViewController" customModule="Rock_Paper_Scisors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZZ-8r-ggh">
+                                <rect key="frame" x="0.0" y="487" width="102" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="KVd-kM-vmJ"/>
+                                </constraints>
+                                <state key="normal" image="rock">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rockBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1FW-eg-JzO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIC-u5-1QH">
+                                <rect key="frame" x="130" y="460" width="68" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="DM0-jW-LCC"/>
+                                </constraints>
+                                <state key="normal" image="paper">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="paperBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1UG-Ff-EZA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbN-9U-7ZI">
+                                <rect key="frame" x="229" y="461" width="91" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="Tek-eR-DVw"/>
+                                </constraints>
+                                <state key="normal" image="scissors">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scissorsBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9Bq-Uu-grF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock Paper Scissors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tq0-Gp-ihx">
+                                <rect key="frame" x="32" y="28" width="265" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUO-FC-rV5">
+                                <rect key="frame" x="16" y="101" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3UV-r2-e4u">
+                                <rect key="frame" x="158" y="101" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bh4-xw-1og">
+                                <rect key="frame" x="33" y="139" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2b-x8-Jax">
+                                <rect key="frame" x="173" y="139" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpB-t2-I1L">
+                                <rect key="frame" x="268" y="100" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlc-eB-Yl8">
+                                <rect key="frame" x="277" y="139" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tq0-Gp-ihx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="5fY-EI-1Ax"/>
+                            <constraint firstItem="bbN-9U-7ZI" firstAttribute="leading" secondItem="vIC-u5-1QH" secondAttribute="trailing" constant="31" id="7xa-JF-e5C"/>
+                            <constraint firstItem="lUO-FC-rV5" firstAttribute="baseline" secondItem="3UV-r2-e4u" secondAttribute="baseline" id="8jl-8n-hF0"/>
+                            <constraint firstAttribute="trailing" secondItem="bbN-9U-7ZI" secondAttribute="trailing" id="C70-Ae-725"/>
+                            <constraint firstItem="vIC-u5-1QH" firstAttribute="bottom" secondItem="iZZ-8r-ggh" secondAttribute="bottom" id="DUc-tt-oC0"/>
+                            <constraint firstItem="NpB-t2-I1L" firstAttribute="top" secondItem="tq0-Gp-ihx" secondAttribute="bottom" constant="37" id="DVN-Jr-vYj"/>
+                            <constraint firstItem="3UV-r2-e4u" firstAttribute="leading" secondItem="lUO-FC-rV5" secondAttribute="trailing" constant="65" id="Irn-AP-K5Q"/>
+                            <constraint firstItem="vIC-u5-1QH" firstAttribute="centerX" secondItem="tq0-Gp-ihx" secondAttribute="centerX" id="Lga-tg-oPP"/>
+                            <constraint firstItem="lUO-FC-rV5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="MhP-53-uAU"/>
+                            <constraint firstItem="A2b-x8-Jax" firstAttribute="baseline" secondItem="vlc-eB-Yl8" secondAttribute="baseline" id="QJg-YJ-gLQ"/>
+                            <constraint firstItem="vIC-u5-1QH" firstAttribute="bottom" secondItem="bbN-9U-7ZI" secondAttribute="bottom" id="SmY-so-4wY"/>
+                            <constraint firstItem="NpB-t2-I1L" firstAttribute="trailing" secondItem="tq0-Gp-ihx" secondAttribute="trailing" id="T0Z-WK-GcC"/>
+                            <constraint firstItem="vlc-eB-Yl8" firstAttribute="centerX" secondItem="NpB-t2-I1L" secondAttribute="centerX" id="ULP-3E-guI"/>
+                            <constraint firstItem="A2b-x8-Jax" firstAttribute="centerX" secondItem="3UV-r2-e4u" secondAttribute="centerX" id="WD1-Hl-nBD"/>
+                            <constraint firstItem="vlc-eB-Yl8" firstAttribute="top" secondItem="NpB-t2-I1L" secondAttribute="bottom" constant="18" id="Wgf-HH-6x1"/>
+                            <constraint firstItem="Bh4-xw-1og" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="17" id="Zff-sR-MAX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tq0-Gp-ihx" secondAttribute="trailing" constant="7" id="aF7-Op-qmD"/>
+                            <constraint firstItem="iZZ-8r-ggh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="bh4-eI-u8Z"/>
+                            <constraint firstItem="vIC-u5-1QH" firstAttribute="trailing" secondItem="3UV-r2-e4u" secondAttribute="trailing" id="eP2-ne-Ddg"/>
+                            <constraint firstItem="tq0-Gp-ihx" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="lt2-zo-f98"/>
+                            <constraint firstItem="A2b-x8-Jax" firstAttribute="baseline" secondItem="Bh4-xw-1og" secondAttribute="baseline" id="qlF-J1-3UA"/>
+                            <constraint firstItem="Bh4-xw-1og" firstAttribute="top" secondItem="lUO-FC-rV5" secondAttribute="bottom" constant="17" id="rU8-jc-H1c"/>
+                            <constraint firstItem="vIC-u5-1QH" firstAttribute="leading" secondItem="iZZ-8r-ggh" secondAttribute="trailing" constant="28" id="sBs-BF-kRP"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iZZ-8r-ggh" secondAttribute="bottom" constant="5" id="tEx-yL-Dam"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="comScore" destination="Bh4-xw-1og" id="nYL-B0-TR4"/>
+                        <outlet property="drawScore" destination="A2b-x8-Jax" id="tgS-Qk-v3f"/>
+                        <outlet property="myScore" destination="vlc-eB-Yl8" id="YTg-C9-Oeu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492" y="449"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paper" width="108" height="162"/>
+        <image name="rock" width="103" height="118"/>
+        <image name="scissors" width="94" height="168"/>
+    </resources>
+</document>
